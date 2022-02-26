@@ -1,0 +1,269 @@
+<div class="dashboard">
+  <div class="all-card">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body border-left-pink">
+            <div class="row">
+              <div class="col">
+                <p class="card-title text-title">TRAFFIC</p>
+                <h2 class="card-text text-amount">350,897</h2>
+              </div>
+              <div class="col-auto">
+                <div class="icon-shape icon-area">
+                  <i class="fa fa-area-chart" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body border-left-orange">
+            <div class="row">
+              <div class="col">
+                <p class="card-title text-title">NEW USERS</p>
+                <h2 class="card-text text-amount">2,356</h2>
+              </div>
+              <div class="col-auto">
+                <div class="icon-shape icon-pie">
+                  <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body border-left-yellow">
+            <div class="row">
+              <div class="col">
+                <p class="card-title text-title">SALES</p>
+                <h2 class="card-text text-amount">924</h2>
+              </div>
+              <div class="col-auto">
+                <div class="icon-shape icon-user">
+                  <i class="fa fa-users" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body border-left-blue">
+            <div class="row">
+              <div class="col">
+               <p class="card-title text-title">PERFORMANCE</p>
+                <h2 class="card-text text-amount">49,65%</h2>
+              </div>
+              <div class="col-auto">
+                <div class="icon-shape icon-percent">
+                  <i class="fa fa-percent" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card chart">
+            <canvas id="myChartCircle"></canvas>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card chart">
+          <canvas id="myChartLine" widtd="100%"></canvas>
+        </div>
+      </div>
+    </div>
+</div>
+  
+  
+  .dashboard {
+  // background: rgba(203,203,210,.15);
+  background: #eef1f5;
+  font-family: Quicksand;
+  
+  .all-card {
+    padding: 30px;
+  }
+  
+  .card {
+      border-radius: 6px;
+      border: 1px solid rgba(0,0,0,.05);
+      background-color: #fff;
+      margin-bottom: 30px;
+      box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+      
+      .border-left-pink {
+        border-left: 4px solid #f5365c;
+      }
+      
+      .border-left-orange {
+        border-left: 4px solid #fb6340;
+      }
+      
+      .border-left-yellow {
+        border-left: 4px solid #ffd600;
+      }
+      
+      .border-left-blue {
+        border-left: 4px solid #11cdef;
+      }
+      
+      .text-title {
+        color: #8898aa;
+        font-weight: 500;
+        font-size: 14px;
+      }
+      
+      .text-amount {
+        font-weight: 600;
+      }
+      
+      .icon-shape {
+        border-radius: 50%;
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        box-shadow: 0 0 2rem 0 rgba(136,152,170,.15)!important;
+      }
+      
+      .icon-area {
+        background: #f5365c;
+      }
+      
+      .icon-pie {
+        background: #fb6340;
+      }
+      
+      .icon-user {
+        background: #ffd600;
+      }
+      
+      .icon-percent {
+        background: #11cdef;
+      }
+    }
+  
+  .chart {
+    padding: 30px;
+  }
+ }
+
+@media (min-width: 992px) and ( max-width: 1300px) {
+  .dashboard .card {
+    .text-title {
+      font-size: 12px;
+    }
+    .text-amount {
+      font-size: 18px;
+    }
+    
+    .icon-shape {
+      width: 35px;
+      height: 35px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .icon-shape {
+    display: none !important;
+  }
+}
+  
+  
+  =====================================
+  
+  
+  .dashboard {
+  background: #eef1f5;
+  font-family: Quicksand;
+}
+.dashboard .all-card {
+  padding: 30px;
+}
+.dashboard .card {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  margin-bottom: 30px;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+.dashboard .card .border-left-pink {
+  border-left: 4px solid #f5365c;
+}
+.dashboard .card .border-left-orange {
+  border-left: 4px solid #fb6340;
+}
+.dashboard .card .border-left-yellow {
+  border-left: 4px solid #ffd600;
+}
+.dashboard .card .border-left-blue {
+  border-left: 4px solid #11cdef;
+}
+.dashboard .card .text-title {
+  color: #8898aa;
+  font-weight: 500;
+  font-size: 14px;
+}
+.dashboard .card .text-amount {
+  font-weight: 600;
+}
+.dashboard .card .icon-shape {
+  border-radius: 50%;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15) !important;
+}
+.dashboard .card .icon-area {
+  background: #f5365c;
+}
+.dashboard .card .icon-pie {
+  background: #fb6340;
+}
+.dashboard .card .icon-user {
+  background: #ffd600;
+}
+.dashboard .card .icon-percent {
+  background: #11cdef;
+}
+.dashboard .chart {
+  padding: 30px;
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+  .dashboard .card .text-title {
+    font-size: 12px;
+  }
+  .dashboard .card .text-amount {
+    font-size: 18px;
+  }
+  .dashboard .card .icon-shape {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .icon-shape {
+    display: none !important;
+  }
+}

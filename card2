@@ -1,0 +1,401 @@
+
+<section>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Current Status</label>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Last 30 Days</label>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Last 90 Days</label>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="pull-right">
+                    <a class="btn btn-default">
+                        Refresh
+                    </a>
+                    <a class="btn btn-success btn-default">
+                        New Project
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="DashTable" class="row  z-depth-1">
+            <div class="col-md-12">
+
+                <table class="table responsive-table highlight bordered">
+                    <thead>
+                        <tr>
+                            <th>
+                                Build Name
+                            </th>
+
+                            <th>
+                                Build id
+                            </th>
+
+                            <th>
+                                Progress
+                            </th>
+
+                            <th>
+                                <div class="btn-group" data-toggle="dropdown" data-target="statmenu">
+
+                                    Status
+
+                                    <ul id="statmenu" class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Completed</a>
+                                        </li>
+                                        <li class="disabled">
+                                            <a href="#">Running</a>
+                                        </li>
+                                        <li class="divider">
+                                        </li>
+                                        <li>
+                                            <a href="#">Stopped</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </th>
+
+                            <th>
+                                Start Time
+                            </th>
+
+                            <th>
+                                Time Remaining
+                            </th>
+
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                IMX6
+                            </td>
+
+                            <td>
+                                IMOB12
+                            </td>
+
+                            <td>
+                                100%
+                            </td>
+
+                            <td>
+                                Running >
+                            </td>
+
+                            <td></td>
+
+                            <td>
+                                1:00:00
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                IMX6
+                            </td>
+
+                            <td>
+                                IMOB12
+                            </td>
+
+                            <td>
+                                100%
+                            </td>
+
+                            <td>
+                                Running >
+                            </td>
+
+                            <td></td>
+
+                            <td>
+                                1:00:00
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                IMX6
+                            </td>
+
+                            <td>
+                                IMOB12
+                            </td>
+
+                            <td>
+                                100%
+                            </td>
+
+                            <td>
+                                Running >
+                            </td>
+
+                            <td></td>
+
+                            <td>
+                                1:00:00
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                IMX6
+                            </td>
+
+                            <td>
+                                IMOB12
+                            </td>
+
+                            <td>
+                                100%
+                            </td>
+
+                            <td>
+                                Running >
+                            </td>
+
+                            <td></td>
+
+                            <td>
+                                1:00:00
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                IMX6
+                            </td>
+
+                            <td>
+                                IMOB12
+                            </td>
+
+                            <td>
+                                100%
+                            </td>
+
+                            <td>
+                                Running >
+                            </td>
+
+                            <td></td>
+
+                            <td>
+                                1:00:00
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <ul id="paginate" class="pagination">
+                    <li>
+                        <a href="#">Prev</a>
+                    </li>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+</section>
+
+  <section>
+    <div class="dashboard">
+    <div class="row">
+        <div class="col l3 m6 s12">
+            <div class="card yellow darken-3 white-text valign-wrapper z-depth-1">
+                <div class="yellow darken-4 icon valign-wrapper">
+                    <i class="material-icons medium valign">build</i>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+                        <h3 class="card-stats-number">15</h3>
+                        <p>of 100 Packages builded</p>
+                        <h3 class="card-stats-number">Qt4</h3>
+                        <p>Current building Package</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+      <div class="col l3 m6 s12">
+            <div class="card red white-text valign-wrapper z-depth-1">
+                <div class="red darken-2 icon valign-wrapper">
+                    <i class="material-icons medium valign">error</i>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+                        <h3 class="card-stats-number">50</h3>
+                        <p>Total Warnings</p>
+                        <h3 class="card-stats-number">Logs</h3>
+                        <p>click to download</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+      
+        <div class="col l3 m6 s12">
+            <div class="card green white-text valign-wrapper z-depth-1">
+                <div class="green darken-2 icon valign-wrapper">
+                    <i class="material-icons medium valign">cloud_download</i>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+                        <h3 class="card-stats-number">Ankaa</h3>
+                        <p>i.MX6 - x11</p>
+                        <h3 class="card-stats-number">Linux</h3>
+                        <p>OS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col l3 m6 s12">
+            <div class="card blue darken-1 white-text valign-wrapper z-depth-1">
+                <div class="blue darken-3 icon valign-wrapper">
+                    <i class="material-icons medium valign">timer</i>
+                </div>
+                <div class="card-content">
+                    <div class="row">
+                        <h3 class="card-stats-number">01:44</h3>
+                        <p>10th Dec'16 Started </p>
+                        <h3 class="card-stats-number">05:00</h3>
+                        <p>10th Dec'16 Finished </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  </section>
+  
+  
+  body {
+    padding: 10px 50px;
+    background-color:#ddd;
+    font-face: roboto;
+}
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#DashTable {
+    background-color:white;
+}
+
+#paginate {
+  float:right;
+}
+
+/* #DashTable table {
+  width:100%;
+} */
+
+/* #DashTable th,#DashTable td {
+  width:16.6%;
+  line-height: 2em;
+}
+ */
+
+.dashboard {
+    padding: 20px 15px;
+    width: 100%;
+    margin: auto;
+}
+
+@media (max-width: 1280px) {
+    .dashboard {
+        width: 100%;
+    }
+}
+
+.dashboard .card {
+    cursor: pointer
+}
+
+.dashboard .card .row {
+    margin-bottom: 0;
+}
+
+.dashboard .card-stats-number {
+    margin: 0;
+    font-weight: bold;
+}
+
+.dashboard .icon {
+    height: 180px;
+}
+
+.dashboard .icon {
+    width: 100px;
+}
+
+.dashboard .icon i {
+    width: 100%;
+    text-align: center;
+    color: rgba(0,0,0,.30)
+}
+.dashboard p a {
+    font-weight:bold;
+    color: rgba(0,0,0,.50);
+}
+
+h3 {
+  padding-top:2px;
+  text-rendering: optimizeLegibility;
+}
+

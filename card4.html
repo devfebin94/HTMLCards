@@ -1,0 +1,90 @@
+<div class="container vh-100 justify-content-center d-flex flex-column">
+  <div class="row justify-content-around mb-3">
+    <div class="col-3 block border-left-success shadow d-flex align-items-center">
+      <i class="text-gray-300 far fa-check-circle icon text-center"></i>
+      <div class="h-100 w-100 p-3">
+        <div class="block-title lg-text text-success mb-2">TASK</div>
+        <div class="d-flex align-items-center w-100">
+          <div class="progress flex-grow-1 mr-3 my-2">
+            <div class="progress-bar progress-bar-striped bg-success w-50" role="progressbar"></div>
+          </div>
+          <div class="md-text text-gray-800">50%</div>
+        </div>
+        <div class="xl-text text-gray-800 float-right mt-2">5/10</div>
+      </div>
+    </div>
+    <div class="col-3 block border-left-primary shadow d-flex align-items-center">
+      <i class="text-gray-300 far fa-calendar-alt icon text-center"></i>
+      <div class="h-100 w-100 p-3">
+        <div class="block-title lg-text text-primary mb-2">COUNTDOWN</div>
+        <div class="d-flex align-items-baseline justify-content-around w-100">
+          <div class="xxl-text text-gray-800">365</div>
+          <div class="lg-text">Days</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-around">
+    <div class="col-3 block border-left-warning shadow d-flex align-items-center">
+      <i class="text-gray-300 fas fa-dollar-sign icon text-center"></i>
+      <div class="h-100 w-100 p-3">
+        <div class="block-title lg-text text-warning mb-2">BUDGET</div>
+        <div class="xxl-text text-gray-800">12500$</div>
+      </div>
+    </div>
+    <div class="col-3 block border-left-danger shadow d-flex align-items-center">
+      <i class="text-gray-300 fas fa-shopping-cart icon text-center"></i>
+      <div class="h-100 w-100 p-3">
+        <div class="block-title lg-text text-danger mb-2">ORDER</div>
+        <div class="d-flex align-items-baseline justify-content-around w-100">
+          <div class="xxl-text text-gray-800">18</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="signature w-100 text-center text-dark">@Nikki.TW</div>
+
+
+@import url(https://fonts.googleapis.com/css?family=Righteous&display=swap);
+
+body {
+  font-family: 'Righteous', cursive;
+}
+
+.xxl-text {
+  font-size: 3rem;
+}
+
+.xl-text {
+  font-size: 2rem;
+}
+
+.lg-text {
+  font-size: 1.5rem;
+}
+
+.md-text {
+  font-size: 1.2rem;
+}
+
+.block {
+  height: 10rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: .5rem solid;
+  min-width: 17.5rem;
+}
+
+.icon {
+  font-size: 5rem;
+  min-width: 5rem;
+}
+
+.progress {
+  height: 0.6rem;
+}
+
+.signature {
+  position: absolute;
+  bottom: 10px;
+}

@@ -1,0 +1,237 @@
+<div class="container__main">
+  <div class="card">
+    <div class="card__body">
+      <div class="title title__primary">
+        Total Man hours: <span>99,999</span>
+      </div>
+      <hr class="title-seperator">
+      <div class="title title__secondary">
+        Safe Man Hours: <span class="text-green">99,900</span>
+      </div>
+      <div class="title title__secondary">
+        Incident Hours: <span class="text-red">99</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+===========
+
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Fira Mono", monospace;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(238, 238, 238, 1);
+  z-index: -100;
+
+  .card {
+    display: block;
+    position: relative;
+    width: 425px;
+    min-height: 200px;
+    margin: 2rem 0.75rem;
+    // background: #83a4d4;
+    // background: -webkit-linear-gradient(to left, #b6fbff, #83a4d4);
+    // background: linear-gradient(to left, #b6fbff, #83a4d4);
+    background: rgba(228, 241, 254, 1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.4);
+    z-index: 1;
+
+    &::before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      content: url(https://img.icons8.com/material/48/ffffff/waiting-room.png);
+      width: 100px;
+      height: 100px;
+      top: -50px;
+      left: 50px;
+      // background: rgba(83, 51, 237, 1);
+      background: rgba(103, 128, 159, 1);
+      border-radius: 50%;
+      box-shadow: 0 0.35rem 0.75rem 0 rgba(0, 0, 0, 0.6);
+      z-index: 10;
+    }
+
+    &__body {
+      display: block;
+      position: relative;
+      top: 50px;
+      width: auto;
+      height: auto;
+      margin: 1rem 2rem;
+      padding: 0rem 2rem;
+
+      hr.title-seperator {
+        border: 1px solid rgba(0, 0, 0, 0.15) !important;
+        margin-bottom: 0.75rem;
+      }
+
+      .title {
+        font-weight: normal;
+        text-transform: uppercase;
+
+        span {
+          float: right;
+          font-weight: bold;
+
+          &.text-red {
+            color: red;
+          }
+
+          &.text-green {
+            color: green;
+          }
+        }
+
+        &__primary {
+          font-size: 2.5rem;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+        }
+
+        &__secondary {
+          font-size: 2rem;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+        }
+
+        @media (max-width: 576px) {
+          &__primary {
+            font-size: 1.75rem;
+          }
+
+          &__secondary {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+=========================
+
+
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Fira Mono", monospace;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #eeeeee;
+  z-index: -100;
+}
+.container__main .card {
+  display: block;
+  position: relative;
+  width: 425px;
+  min-height: 200px;
+  margin: 2rem 0.75rem;
+  background: #e4f1fe;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.container__main .card::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: url(https://img.icons8.com/material/48/ffffff/waiting-room.png);
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 50px;
+  background: #67809f;
+  border-radius: 50%;
+  box-shadow: 0 0.35rem 0.75rem 0 rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.container__main .card__body {
+  display: block;
+  position: relative;
+  top: 50px;
+  width: auto;
+  height: auto;
+  margin: 1rem 2rem;
+  padding: 0rem 2rem;
+}
+.container__main .card__body hr.title-seperator {
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  margin-bottom: 0.75rem;
+}
+.container__main .card__body .title {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.container__main .card__body .title span {
+  float: right;
+  font-weight: bold;
+}
+.container__main .card__body .title span.text-red {
+  color: red;
+}
+.container__main .card__body .title span.text-green {
+  color: green;
+}
+.container__main .card__body .title__primary {
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.container__main .card__body .title__secondary {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+@media (max-width: 576px) {
+  .container__main .card__body .title__primary {
+    font-size: 1.75rem;
+  }
+  .container__main .card__body .title__secondary {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,104 @@
+<div class="card">
+  <a href="https://www.google.com">
+    <div class="cardheader iconcolor1">
+      <img src="http://tele-optics.com/wp-content/uploads/icon_camera1.png" alt="icon_camera">
+    </div>
+    <div class="cardlinks">
+      <h1>Access & Security</h1>
+      <ul class="cardlist">
+        <li>Access Controls</li>
+        <li>CCTV/IP Cameras</li>
+        <li>Intrusion Alarms</li>
+        <li>Time Synchronization</li>
+      </ul>
+    </div>
+  </a>
+</div>
+
+<div class="card">
+  <a href="https://www.google.com">
+    <div class="cardheader iconcolor2">
+      <img src="http://tele-optics.com/wp-content/uploads/icon_robber.png" alt="icon_camera">
+    </div>
+    <div class="cardlinks">
+      <h1>Residential Security</h1>
+      <ul class="cardlist">
+        <li>Wired &amp; Wireless Systems</li>
+        <li>Landline &amp; Cellular</li>
+        <li>Home Automation</li>
+        <li>Video Camera Integration</li>
+      </ul>
+    </div>
+  </a>
+</div>
+
+
+
+.card {
+  width: 300px;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+div.card a {
+  text-decoration: none;
+}
+
+.cardheader {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-position: 100% 0;
+  background-size: 100% 200% !important;
+  transition: background-position .25s;
+}
+
+.cardheader:hover {
+  background-position: 0 -100% !important;
+}
+
+.cardheader img {
+  padding: 30px 0;
+  margin: 0 auto;
+  width: 125px;
+  height: auto;
+}
+
+.iconcolor1 {
+  background-color: #1C7892 !important; // Fallback
+  background-image: linear-gradient(to bottom, #1C7892 50%, #2AB0D6 50%) !important;
+}
+
+.iconcolor2 {
+  background-color: #4C607B !important; // Fallback
+  background-image: linear-gradient(to bottom, #4C607B 50%, #558ad2 50%) !important;
+}
+
+div.cardlinks {
+  background: #fff;
+  padding: 20px;
+}
+
+.cardlinks h1 {
+  font-weight: 300;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 0 0 20px 0;
+  color: black;
+}
+
+ul.cardlist {
+  padding: 0px;
+  margin: 0px;
+  font-size: .8em;
+  font-weight: 400;
+}
+
+ul.cardlist li {
+  color: #21252b;
+  background-image: url(http://tele-optics.com/wp-content/uploads/icon_listbullet.png);
+  background-repeat: no-repeat;
+  background-position: 0px center;
+  padding-left: 20px;
+  list-style: none;
+}
